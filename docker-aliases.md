@@ -52,3 +52,9 @@ alias docker-panic='docker stop $(docker ps -q) && echo "All containers stopped"
 
 # 🔍 ADVANCED MONITORING
 alias docker-metrics='echo "=== CONTAINERS ===" && docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.RunningFor}}" && echo -e "\n=== IMAGES ===" && docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}" && echo -e "\n=== VOLUMES ===" && docker volume ls && echo -e "\n=== NETWORKS ===" && docker network ls --filter type=custom'
+
+## 🎯 Pro Tips
+Make it permanent: The aliases will load every time you open a new terminal
+Customize: Edit ~/.docker-aliases to add your own aliases
+Backup: Your original .bashrc is backed up during installation
+Test: Run show-containers to verify installation worked
