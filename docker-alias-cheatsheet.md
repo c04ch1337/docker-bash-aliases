@@ -32,3 +32,9 @@ docker-exec       # Exec into container
 
 ## 🎯 PROJECTS
 docker-project-ps # Show compose projects
+
+## 🎯 Pro Tips
+Make it permanent: The aliases will load every time you open a new terminal
+Customize: Edit ~/.docker-aliases to add your own aliases
+Backup: Your original .bashrc is backed up during installation
+Test: Run show-containers to verify installation worked
